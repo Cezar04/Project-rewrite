@@ -1,0 +1,49 @@
+#min
+def minim(x, y):
+    if x < y:
+        return x
+    else:
+        return y
+        
+print(minim(6, 29))
+
+#max
+def maxim(x, y):
+    if x > y:
+        return x
+    else:
+        return y
+        
+print(maxim(6, 29))
+
+#len
+def leni(int):
+    count = 0
+    for i in int:
+        count+= 1
+    return count
+int=(2,3,5,7,8) 
+print(leni(int))
+
+#multiply
+def multiply(x,y):
+    if y < 0:
+        return multiply(x,y)
+    elif y == 0:
+        return 0
+    elif y == 1:
+        return x
+    else:
+        return x + multiply(x, y - 1)
+print(multiply(4,5))
+
+#pow
+def mypow(num, power):
+  rasp = num
+  i = 1
+  while i < power:
+    rasp = rasp*num
+    i += 1
+  return rasp
+
+print(mypow(2,10))
